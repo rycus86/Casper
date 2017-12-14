@@ -245,6 +245,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 21px;
 }
 
+.home-template .nav {
+    background: #FF572299;
+    border-radius: 10px;
+}
+
 .nav {
     display: flex;
     margin: 0 0 0 -12px;
