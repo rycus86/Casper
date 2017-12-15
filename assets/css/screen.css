@@ -809,7 +809,7 @@ Usage (In Ghost editor):
 
 .post-full-content pre {
     overflow-x: auto;
-    margin: 1.5em 0 3em;
+    margin: 0 0 3em;
     padding: 20px;
     max-width: 100%;
     border: color(var(--darkgrey) l(-10%)) 1px solid;
@@ -817,7 +817,7 @@ Usage (In Ghost editor):
     font-size: 1.4rem;
     line-height: 1.5em;
     background: color(var(--darkgrey) l(-3%));
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 .post-full-content pre code {
@@ -825,10 +825,6 @@ Usage (In Ghost editor):
     font-size: inherit;
     line-height: inherit;
     background: transparent;
-}
-
-.post-full-content pre code * {
-    color: inherit;
 }
 
 .post-full-content .fluid-width-video-wrapper {
