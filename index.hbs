@@ -9,9 +9,9 @@ into the {body} of the default.hbs template --}}
             <h1 class="site-title">
                 {{#if @blog.logo}}
                     <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-                {{else}}
-                    {{@blog.title}}
                 {{/if}}
+
+                {{@blog.title}}
             </h1>
             <h2 class="site-description">{{@blog.description}}</h2>
         </div>

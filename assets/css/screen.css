@@ -165,6 +165,7 @@ body {
 
 .site-logo {
     max-height: 45px;
+    border-radius: 6px;
 }
 
 .site-description {
@@ -244,6 +245,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     width: auto;
     height: 21px;
+    border-radius: 4px;
 }
 
 .home-template .nav {
