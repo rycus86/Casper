@@ -23,6 +23,8 @@ into the {body} of the default.hbs template --}}
                     {{#primary_tag}}
                         <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
                     {{/primary_tag}}
+                    <span class="date-divider">/</span>
+                    <span class="post-full-reading-time">{{reading_time}}</span>
                 </section>
                 <h1 class="post-full-title">{{title}}</h1>
             </header>
@@ -34,6 +36,12 @@ into the {body} of the default.hbs template --}}
 
             <section class="post-full-content">
                 {{content}}
+
+                {{#if tags.[1]}}
+                <div class="post-full-footer-tags">
+                    <p>posted in {{tags from=2 separator=", "}}</p>
+                </div>
+                {{/if}}
             </section>
 
             {{!-- Email subscribe form at the bottom of the page --}}
@@ -67,13 +75,8 @@ into the {body} of the default.hbs template --}}
                 </div>
 
                 {{/author}}
+
             </footer>
-
-            {{!--
-
-            If you use Disqus comments, just uncomment this block.
-            The only thing you need to change is "test-apkdzgmqhj" - which
-            should be replaced with your own Disqus site-id.
 
             <section class="post-full-comments">
                 <div id="disqus_thread"></div>
@@ -84,13 +87,12 @@ into the {body} of the default.hbs template --}}
                     };
                     (function() {
                         var d = document, s = d.createElement('script');
-                        s.src = 'https://test-apkdzgmqhj.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
+                        s.src = 'https://viktoradam.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', + new Date());
                         (d.head || d.body).appendChild(s);
                     })();
                 </script>
             </section>
-            --}}
 
         </article>
 
