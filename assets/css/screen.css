@@ -590,11 +590,11 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 
 .post-full-title {
-    margin: 0;
+    margin: 0 0 0.2em;
     color: color(var(--darkgrey) l(-5%));
 }
 
-.date-divider {
+.meta-divider {
     display: inline-block;
     margin: 0 6px 1px;
 }
@@ -1037,14 +1037,6 @@ Usage (In Ghost editor):
 .post-full-content table td {
     padding: 6px 12px;
     border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid;
-}
-
-.post-full-footer-tags {
-    color: #738a94;
-    font-style: italic;
-    line-height: 1.3em;
-    text-transform: lowercase;
-    text-align: right;
 }
 
 .post-full-footer-tags a {

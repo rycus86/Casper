@@ -19,14 +19,20 @@ into the {body} of the default.hbs template --}}
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
                     {{#primary_tag}}
-                        <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
+                        <a href="{{url}}">{{name}}</a>
                     {{/primary_tag}}
-                    <span class="date-divider">/</span>
-                    <span class="post-full-reading-time">{{reading_time}}</span>
+                    {{#foreach tags from=2}}
+                        <span class="meta-divider">/</span>
+                        <a href="{{url}}">{{name}}</a>
+                    {{/foreach}}
                 </section>
                 <h1 class="post-full-title">{{title}}</h1>
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+                    <span class="meta-divider">/</span>
+                    <span class="post-full-reading-time">{{reading_time}}</span>
+                </section>
             </header>
 
             {{#if feature_image}}
@@ -36,12 +42,6 @@ into the {body} of the default.hbs template --}}
 
             <section class="post-full-content">
                 {{content}}
-
-                {{#if tags.[1]}}
-                <div class="post-full-footer-tags">
-                    <p>posted in {{tags from=2 separator=", "}}</p>
-                </div>
-                {{/if}}
             </section>
 
             {{!-- Email subscribe form at the bottom of the page --}}
