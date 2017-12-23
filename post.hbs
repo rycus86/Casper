@@ -220,4 +220,10 @@ $(document).ready(function () {
     update();
 });
 </script>
+
+{{!-- Code highlighting with highlight.js --}}
+<script src="{{asset "js/highlightjs-v9.12.0.min.js"}}"></script>
+<script src="{{asset "js/highlightjs-yaml-v9.12.0.min.js"}}"></script>
+<script src="{{asset "js/highlightjs-dockerfile-v9.12.0.min.js"}}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 {{/contentFor}}

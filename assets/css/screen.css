@@ -27,6 +27,7 @@ production stylesheet in assets/built/screen.css
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
 @import "global.css";
+@import "highlightjs-androidstudio-v9.12.0.min.css";
 
 body {
     background: #f4f8fb;
