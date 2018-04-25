@@ -1,4 +1,4 @@
-Do you need help or have a question? Please come chat in our forum: https://forum.ghost.org 👫.
+Do you need help or have a question? Please come chat in Slack: https://ghost.org/slack 👫.
 
 If you're filing a bug 🐛, please include the following information:
 
